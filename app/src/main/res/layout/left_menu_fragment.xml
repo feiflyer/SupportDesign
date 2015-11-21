@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/holo_blue_bright"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="第一项"/>
+
+    <TextView
+        android:id="@+id/tv_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="第二项"/>
+
+    <TextView
+        android:id="@+id/tv_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="第三项"/>
+
+    <TextView
+        android:id="@+id/tv_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="第四项"/>
+
+
+    <TextView
+        android:id="@+id/tv_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="第五项"/>
+
+    <TextView
+        android:id="@+id/tv_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="第六项"/>
+
+</LinearLayout>
