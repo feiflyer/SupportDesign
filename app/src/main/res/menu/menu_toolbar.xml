@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_toolBar01"
+          android:title="ToolBar实战1"
+          android:icon="@mipmap/ic_launcher"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_toolBar02"
+          android:title="ToolBar实战2"
+          android:icon="@mipmap/ic_launcher"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_toolBar03"
+          android:title="ToolBar实战3"
+          android:icon="@mipmap/ic_launcher"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_toolBar04"
+          android:title="ToolBar实战4"
+          android:icon="@mipmap/ic_launcher"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_toolBar05"
+          android:title="ToolBar实战5"
+          android:icon="@mipmap/ic_launcher"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_toolBar06"
+          android:title="ToolBar实战6"
+          android:icon="@mipmap/ic_launcher"
+          app:showAsAction="ifRoom"/>
+
+
+</menu>
