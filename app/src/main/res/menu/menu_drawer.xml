@@ -18,6 +18,11 @@
             android:id="@+id/nestedScrolling"
             android:icon="@mipmap/ic_launcher"
             android:title="NestedScrolling"/>
+
+        <item
+            android:id="@+id/collapsingToolbarLayout"
+            android:icon="@mipmap/ic_launcher"
+            android:title="CollapsingToolbarLayout"/>
     </group>
 
     <item android:title="Sub items">

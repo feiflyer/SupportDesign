@@ -23,6 +23,17 @@
             android:label="@string/title_activity_tool_bar"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity android:name=".CoordinatorLayoutActivity" >
+        </activity>
+        <activity
+            android:name=".AppBarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CollapsingToolbarLayoutActivity"
+            android:label="@string/title_activity_collapsing_toolbar_layout"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

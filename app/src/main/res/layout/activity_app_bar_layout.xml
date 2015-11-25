@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--在可以滚动的View上设置属性 app:layout_behavior.-->
+    <!--该属性的值实际上是一个完整的class名字,而上面例子中的-->
+    <!--@string/appbar_scrolling_view_behavior 是Android Support Library 定义后的值,-->
+    <!--可以被直接使用.-->
+    <!--这个Behavior的class是真正控制滚动时候View的滚动行为.-->
+    <!--我们也可以继承Behavior这个class去实现特有的滚动行为.-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#d67d76">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ccc"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/bg_content"
+            app:layout_scrollFlags="scroll"/>
+
+        <!--Scroll 所有希望会滚出屏幕范围的View都要设置这个属性-->
+        <!--enterAlways 表示滚动时,这个View会随着滚动手势出现,马上恢复原来的位置.-->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

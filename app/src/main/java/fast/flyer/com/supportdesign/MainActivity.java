@@ -2,6 +2,7 @@ package fast.flyer.com.supportdesign;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -91,6 +92,26 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.toolBar:
                         Intent intent = new Intent(MainActivity.this , ToolBarActivity.class);
                         startActivity(intent);
+                        break;
+
+                    case R.id.coordinatorLayout:
+                        Intent coordinatorLayoutIntent = new Intent(MainActivity.this , CoordinatorLayoutActivity.class);
+                        startActivity(coordinatorLayoutIntent);
+                        break;
+                    case R.id.appBarLayout:
+
+                        Intent appBarIntent = new Intent(MainActivity.this , AppBarLayoutActivity.class);
+                        startActivity(appBarIntent);
+
+                        break;
+
+                    case R.id.collapsingToolbarLayout:
+
+                        Intent coolIntent = new Intent(MainActivity.this , CollapsingToolbarLayoutActivity.class);
+                        startActivity(coolIntent);
+
+                        break;
+
                 }
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 return true;

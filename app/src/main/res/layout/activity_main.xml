@@ -21,7 +21,7 @@
         android:layout_gravity="left"
         android:fitsSystemWindows="true"
         android:tag="LEFT"
-        android:backgroundTint="@android:color/black"
+        android:background="#ccc"
         app:headerLayout="@layout/header_just_username"
         app:menu="@menu/menu_drawer"/>
 
