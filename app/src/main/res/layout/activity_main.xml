@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    android:id="@+id/id_drawer_layout"
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/rl_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/bg_content">
-    </RelativeLayout>
+        android:layout_height="?attr/actionBarSize"
+        android:background="#f0f"/>
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/id_nv_menu"
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/id_drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="left"
-        android:fitsSystemWindows="true"
-        android:tag="LEFT"
-        android:background="#ccc"
-        app:headerLayout="@layout/header_just_username"
-        app:menu="@menu/menu_drawer"/>
+        android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/fl_right"
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="end"
-        android:background="@android:color/darker_gray"/>
 
-</android.support.v4.widget.DrawerLayout>
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_recyler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/id_nv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#ccc"
+            android:fitsSystemWindows="true"
+            android:tag="LEFT"
+            app:headerLayout="@layout/header_just_username"
+            app:menu="@menu/menu_drawer"/>
+
+        <FrameLayout
+            android:id="@+id/fl_right"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@android:color/darker_gray"/>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

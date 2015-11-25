@@ -6,4 +6,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_tool_bar">ToolBarActivity</string>
     <string name="title_activity_collapsing_toolbar_layout">CollapsingToolbarLayoutActivity</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
 </resources>
