@@ -21,7 +21,7 @@ import fast.flyer.com.supportdesign.ToolBarActivity;
 public class RecyclerViewLoadMoreAdapter extends RecyclerView.Adapter {
 
     private static final int TYPE_ITEM = 0;  //普通Item View
-    private static final int TYPE_FOOTER = 1;  //顶部FootView
+    private static final int TYPE_FOOTER = 1;  //底部FootView
     private Context mContext;
     private List<String> mDatas;
 
