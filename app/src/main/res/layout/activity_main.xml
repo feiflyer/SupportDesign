@@ -42,12 +42,13 @@
             app:headerLayout="@layout/header_just_username"
             app:menu="@menu/menu_drawer"/>
 
-        <FrameLayout
-            android:id="@+id/fl_right"
-            android:layout_width="300dp"
+        <android.support.design.widget.NavigationView
+            android:id="@+id/menu_right"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:background="@android:color/darker_gray"/>
-
+            android:layout_gravity="right"
+            android:background="#ccc"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/menu_main_right"/>
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

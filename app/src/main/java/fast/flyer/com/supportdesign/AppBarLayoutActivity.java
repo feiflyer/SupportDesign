@@ -4,18 +4,14 @@ import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import fast.flyer.com.supportdesign.adapter.RecylerAdapter;
+import fast.flyer.com.supportdesign.adapter.RecyclerViewLoadMoreAdapter;
 
 public class AppBarLayoutActivity extends AppCompatActivity {
 
@@ -35,8 +31,14 @@ public class AppBarLayoutActivity extends AppCompatActivity {
         mToolbar.setTitle("AppBar");
         setSupportActionBar(mToolbar);
 
+      List<String> mDatas = new ArrayList<String>();
+        for (int i = 'A'; i < 'z'; i++)
+        {
+            mDatas.add("" + (char) i);
+        }
+
         mRecylerView.setLayoutManager(new LinearLayoutManager(this , LinearLayoutManager.VERTICAL , false));
-        mRecylerView.setAdapter(new RecylerAdapter(this));
+        mRecylerView.setAdapter(new RecyclerViewLoadMoreAdapter(this ,mDatas ));
     }
 
 }

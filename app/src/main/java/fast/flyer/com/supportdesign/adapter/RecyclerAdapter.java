@@ -14,12 +14,12 @@ import fast.flyer.com.supportdesign.R;
 /**
  * Created by liangchuanfei on 15/11/25.
  */
-public class RecylerAdapter extends RecyclerView.Adapter<RecylerAdapter.MyViewHolder>{
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>{
 
     private ArrayList<String> mDatas;
     private Context mContext;
 
-    public RecylerAdapter(Context context) {
+    public RecyclerAdapter(Context context) {
 
         mContext = context;
         mDatas = new ArrayList<String>();

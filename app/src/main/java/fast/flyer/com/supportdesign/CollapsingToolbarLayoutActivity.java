@@ -11,7 +11,7 @@ import android.view.View;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import fast.flyer.com.supportdesign.adapter.RecylerAdapter;
+import fast.flyer.com.supportdesign.adapter.RecyclerAdapter;
 
 /**
  * CollapsingToolbarLayout作用是提供了一个可以折叠的Toolbar，它继承至FrameLayout，
@@ -53,7 +53,7 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity {
         });
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        mRecyclerView.setAdapter(new RecylerAdapter(this));
+        mRecyclerView.setAdapter(new RecyclerAdapter(this));
 
     }
 

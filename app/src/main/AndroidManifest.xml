@@ -34,6 +34,8 @@
             android:label="@string/title_activity_collapsing_toolbar_layout"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity android:name=".RefreshRecyclerViewActivity" >
+        </activity>
     </application>
 
 </manifest>
